@@ -1,0 +1,51 @@
+============================================================
+       ADVANCED LINUX SCRIPTING PRACTICE LAB
+============================================================
+Files provided: user_db.csv, web_traffic.log, system_health.txt
+
+------------------------------------------------------------
+CHALLENGE 1: CSV DATA EXTRACTION (awk)
+------------------------------------------------------------
+Task: Create 'extract_admins.sh' to:
+1. Identify all users with the 'admin' role in user_db.csv.
+2. Print their names in UPPERCASE (use sed or awk).
+3. Format: "ADMIN USER FOUND: ALICE"
+
+------------------------------------------------------------
+CHALLENGE 2: WEB LOG ANALYSIS (grep, sort, uniq)
+------------------------------------------------------------
+Task: Create 'analyze_traffic.sh' to:
+1. Find all '401' (Unauthorized) errors in web_traffic.log.
+2. Extract only the IP addresses of the users who got 401s.
+3. Sort and count how many times each IP failed.
+4. Output to 'suspected_attacks.txt'.
+
+------------------------------------------------------------
+CHALLENGE 3: SYSTEM ALERT TRIGGER (if/else, awk)
+------------------------------------------------------------
+Task: Create 'monitor_health.sh' to:
+1. Read the DISK_USAGE percentage from system_health.txt.
+2. If the usage is GREATER THAN 90%, print "CRITICAL: Disk Space Low!"
+3. Otherwise, print "System healthy".
+
+------------------------------------------------------------
+CHALLENGE 4: THE BULK RENAMER (for loops, sed)
+------------------------------------------------------------
+Task: Create 'rename_cache.sh' to:
+1. Look into the 'cache/' folder.
+2. Find all files ending in '.tmp'.
+3. Rename them to end in '.old' instead.
+   (Example: data_tmp.tmp -> data_tmp.old)
+
+------------------------------------------------------------
+CHALLENGE 5: DYNAMIC USER WELCOME (read, case)
+------------------------------------------------------------
+Task: Create 'user_search.sh' to:
+1. Ask the student to enter a username (using 'read').
+2. Search user_db.csv for that user.
+3. If found, print their Role and Status.
+4. If not found, print "User does not exist in database."
+
+============================================================
+PRO-TIP: Use pipes (|) to chain your commands for speed!
+============================================================

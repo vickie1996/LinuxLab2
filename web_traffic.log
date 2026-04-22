@@ -1,0 +1,6 @@
+192.168.1.10 - GET /index.html 200
+10.0.0.5 - POST /login.php 401
+192.168.1.10 - GET /dashboard.php 200
+172.16.0.4 - GET /assets/logo.png 404
+10.0.0.5 - POST /login.php 401
+10.0.0.5 - POST /login.php 200

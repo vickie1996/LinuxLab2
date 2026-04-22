@@ -1,0 +1,6 @@
+id,user,role,status,last_login
+101,alice,admin,active,2026-04-01
+102,bob,developer,inactive,2025-12-20
+103,charlie,manager,active,2026-03-15
+104,dave,developer,active,2026-04-10
+105,eve,admin,active,2026-04-11
